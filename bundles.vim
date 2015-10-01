@@ -117,7 +117,6 @@ NeoBundle 'groenewege/vim-less'
 NeoBundle 'mustache/vim-mustache-handlebars'
 NeoBundle 'mtscout6/vim-cjsx'
 NeoBundle 'vitaly/vim-literate-coffeescript'
-NeoBundle 'rust-lang/rust', {'rtp': 'src/etc/vim/'}
 
 " clojure
 "NeoBundle 'VimClojure'
@@ -139,6 +138,8 @@ NeoBundle 'scrooloose/vim-space'
 NeoBundle 'mattn/gist-vim'
 " web APIs support
 NeoBundle 'mattn/webapi-vim'
+
+NeoBundle 'vim-scripts/openscad.vim'
 
 "NeoBundle 'ShowMarks'
 "NeoBundle 'tpope/vim-unimpaired'
