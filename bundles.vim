@@ -20,8 +20,6 @@ NeoBundle 'scrooloose/nerdcommenter'
 NeoBundle 'kien/ctrlp.vim'
 " popup completion menu
 NeoBundle 'AutoComplPop'
-" tags list navigation
-NeoBundle 'taglist.vim'
 " yank history
 NeoBundle 'YankRing.vim'
 " git integration
@@ -40,8 +38,6 @@ NeoBundle 'rking/ag.vim'
 NeoBundle 'austintaylor/vim-indentobject'
 " global search & replace
 NeoBundle 'greplace.vim'
-" better looking statusline
-NeoBundle 'bling/vim-airline'
 " plugin for resolving three-way merge conflicts
 NeoBundle 'sjl/splice.vim'
 " plugin for visually displaying indent levels
@@ -89,8 +85,6 @@ NeoBundle 'apidock.vim'
 NeoBundle 'vim-scripts/blockle.vim'
 " lightweight Rspec runner for Vim
 NeoBundle 'josemarluedke/vim-rspec'
-" i18n extraction plugin
-NeoBundle 'stefanoverna/vim-i18n'
 
 " color themes
 NeoBundle 'altercation/vim-colors-solarized'
