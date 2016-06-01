@@ -41,7 +41,7 @@ NeoBundle 'austintaylor/vim-indentobject'
 " global search & replace
 NeoBundle 'greplace.vim'
 " better looking statusline
-NeoBundle 'bling/vim-airline'
+" NeoBundle 'bling/vim-airline'
 " plugin for resolving three-way merge conflicts
 NeoBundle 'sjl/splice.vim'
 " plugin for visually displaying indent levels
@@ -111,7 +111,6 @@ NeoBundle 'vim-scripts/jade.vim'
 NeoBundle 'wavded/vim-stylus'
 NeoBundle 'slim-template/vim-slim'
 NeoBundle 'elixir-lang/vim-elixir'
-NeoBundle 'Blackrush/vim-gocode'
 NeoBundle 'ekalinin/Dockerfile.vim'
 NeoBundle 'groenewege/vim-less'
 NeoBundle 'mustache/vim-mustache-handlebars'
@@ -159,6 +158,16 @@ NeoBundle 'Shougo/vimproc.vim', {
 NeoBundle 'Shougo/unite.vim'
 NeoBundle 'Shougo/unite-outline'
 NeoBundle 'ujihisa/unite-colorscheme'
+NeoBundle 'dag/vim-fish'
+NeoBundle 'fatih/vim-go'
+NeoBundle 'slashmili/alchemist.vim'
+
+
+NeoBundle 'leafgarland/typescript-vim'
+NeoBundle 'ekalinin/Dockerfile.vim'
+
+"NeoBundle 'Blackrush/vim-gocode'
+"NeoBundle 'honza/vim-snippets'
 
 if filereadable(expand("~/.vimrc.bundles"))
   source ~/.vimrc.bundles
@@ -168,3 +177,5 @@ call neobundle#end()
 
 filetype plugin indent on
 
+"ActivateAddons vim-snippets snipmate
+"ActivateAddons snipmate
