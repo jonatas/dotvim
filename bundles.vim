@@ -60,6 +60,7 @@ NeoBundle 'sjl/gundo.vim'
 NeoBundle 'AndrewRadev/switch.vim'
 " async external commands with output in vim
 NeoBundle 'tpope/vim-dispatch'
+NeoBundle 'radenling/vim-dispatch-neovim'
 " git diff in the gutter (sign column) and stages/reverts hunks
 NeoBundle 'airblade/vim-gitgutter'
 " hi-speed html coding
@@ -159,15 +160,22 @@ NeoBundle 'slashmili/alchemist.vim'
 
 NeoBundle 'leafgarland/typescript-vim'
 NeoBundle 'ekalinin/Dockerfile.vim'
+NeoBundle 'tpope/vim-abolish'
+NeoBundle 'rhysd/vim-grammarous'
 
 "NeoBundle 'Blackrush/vim-gocode'
 "NeoBundle 'honza/vim-snippets'
+NeoBundle 'ngmy/vim-rubocop'
+
+NeoBundle 'wakatime/vim-wakatime'
 
 if filereadable(expand("~/.vimrc.bundles"))
   source ~/.vimrc.bundles
 endif
 
 call neobundle#end()
+
+let g:rspec_command = "Dispatch bin/spring rspec {spec} --fail-fast"
 
 filetype plugin indent on
 
