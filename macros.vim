@@ -9,3 +9,8 @@ let @s="S*gvS*"
 
 " 'q' format paragraph
 let @q="V}kQ"
+
+let g:rspec_command = "Dispatch bundle exec rspec {spec}"
+
+filetype plugin indent on
+set conceallevel=0

@@ -14,5 +14,3 @@ source ~/.vim/before.vim   " local BEFORE configs
 " bindings.vim and local.vim are loaded from after.vim
 "
 "ActivateAddons vim-snippets snipmate
-set endofline
-set cb=unnamed

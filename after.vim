@@ -7,3 +7,8 @@ NeoBundleDocs
 source ~/.vim/bindings.vim
 source ~/.vim/plugins-override.vim
 
+set termguicolors     " enable true colors support
+let ayucolor="light"  " for light version of theme
+colorscheme ayu
+
+

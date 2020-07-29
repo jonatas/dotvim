@@ -19,7 +19,7 @@ NeoBundle 'scrooloose/nerdcommenter'
 " fuzzy file open
 NeoBundle 'kien/ctrlp.vim'
 " popup completion menu
-NeoBundle 'AutoComplPop'
+" NeoBundle 'AutoComplPop'
 " yank history
 NeoBundle 'YankRing.vim'
 " git integration
@@ -71,7 +71,7 @@ NeoBundle 'editorconfig/editorconfig-vim'
 " Ruby/Rails
 
 " rails support
-NeoBundle 'tpope/vim-rails'
+" NeoBundle 'tpope/vim-rails'
 " bundler integration (e.g. :Bopen)
 NeoBundle 'tpope/vim-bundler'
 " rake integration
@@ -88,9 +88,7 @@ NeoBundle 'vim-scripts/blockle.vim'
 NeoBundle 'josemarluedke/vim-rspec'
 
 " color themes
-NeoBundle 'altercation/vim-colors-solarized'
-NeoBundle 'tpope/vim-vividchalk'
-NeoBundle 'chriskempson/tomorrow-theme', {'rtp': 'vim/'}
+NeoBundle 'ayu-theme/ayu-vim'
 
 " syntax support
 NeoBundle 'vim-ruby/vim-ruby'
@@ -152,32 +150,43 @@ NeoBundle 'Shougo/vimproc.vim', {
 \ }
 NeoBundle 'Shougo/unite.vim'
 NeoBundle 'Shougo/unite-outline'
-NeoBundle 'ujihisa/unite-colorscheme'
 NeoBundle 'dag/vim-fish'
 NeoBundle 'fatih/vim-go'
 NeoBundle 'slashmili/alchemist.vim'
 
 
 NeoBundle 'leafgarland/typescript-vim'
+NeoBundle 'Shougo/vimproc.vim', {
+\ 'build' : {
+\     'windows' : 'tools\\update-dll-mingw',
+\     'cygwin' : 'make -f make_cygwin.mak',
+\     'mac' : 'make -f make_mac.mak',
+\     'linux' : 'make',
+\     'unix' : 'gmake',
+\    },
+\ }
+
 NeoBundle 'ekalinin/Dockerfile.vim'
 NeoBundle 'tpope/vim-abolish'
 NeoBundle 'rhysd/vim-grammarous'
 
 "NeoBundle 'Blackrush/vim-gocode'
 "NeoBundle 'honza/vim-snippets'
+NeoBundle 'python-mode/python-mode'
+
+NeoBundle 'tmhedberg/SimpylFold'
+
+NeoBundle 'darthmall/vim-vue'
+NeoBundle 'BlakeWilliams/vim-pry'
+
+NeoBundle 'mklabs/split-term.vim'
+NeoBundle 'ddrscott/vim-side-search'
+NeoBundle 'tpope/vim-projectionist'
+
+NeoBundle 'junegunn/fzf.vim'
 NeoBundle 'ngmy/vim-rubocop'
-
-NeoBundle 'wakatime/vim-wakatime'
-
-if filereadable(expand("~/.vimrc.bundles"))
-  source ~/.vimrc.bundles
-endif
+NeoBundle 'mtth/scratch.vim'
+NeoBundle 'neomake/neomake'
 
 call neobundle#end()
 
-let g:rspec_command = "Dispatch bin/spring rspec {spec} --fail-fast"
-
-filetype plugin indent on
-
-"ActivateAddons vim-snippets snipmate
-"ActivateAddons snipmate

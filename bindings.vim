@@ -15,19 +15,12 @@ nmap <C-E> :b#<CR>
 
 " ,e to fast finding files. just type beginning of a name and hit TAB
 nmap <leader>e :e **/
-
-" Make shift-insert work like in Xterm
-map <S-Insert> <MiddleMouse>
-map! <S-Insert> <MiddleMouse>
-
 " ,n to get the next location (compilation errors, grep etc)
-nmap <leader>n :cn<CR>
-nmap <leader>N :cp<CR>
+nmap <leader>n :tabnext<CR>
+nmap <leader>N :tabprev<CR>
 
-" ,d to diffupdate
-nmap <leader>d :diffupdate<CR>
-nmap <leader>dp :diffput<CR>
-nmap <leader>dg :diffget<CR>
+" ,d to insert a pry
+nmap <leader>d :call pry#insert()<CR>
 
 " driving me insane this thing
 command Q q
